@@ -1,0 +1,25 @@
+rootProject.name = 'microservice-example'
+
+include 'config-server'
+include 'eureka-server'
+
+include 'clients:creator-ui'
+findProject(':clients:creator-ui')?.name = 'creator-ui'
+
+include 'clients:chassis-interface'
+findProject(':clients:chassis-interface')?.name = 'chassis-interface'
+
+include 'clients:chassis-service'
+findProject(':clients:chassis-service')?.name = 'chassis-service'
+
+include 'clients:engine-interface'
+findProject(':clients:engine-interface')?.name = 'engine-interface'
+
+include 'clients:engine-service'
+findProject(':clients:engine-service')?.name = 'engine-service'
+
+include 'clients:wheel-interface'
+findProject(':clients:wheel-interface')?.name = 'wheel-interface'
+
+include 'clients:wheel-service'
+findProject(':clients:wheel-service')?.name = 'wheel-service'

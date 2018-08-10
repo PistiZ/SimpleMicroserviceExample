@@ -1,0 +1,5 @@
+dependencies{
+    compile project (':clients:chassis-interface')
+    compile project (':clients:engine-interface')
+    compile project (':clients:wheel-interface')
+}
